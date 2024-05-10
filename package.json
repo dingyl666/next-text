@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
-    "start": "next start"
+    "dev": "PORT=8000 next dev",
+    "start": "PORT=18000 next start"
   },
   "dependencies": {
     "date-fns": "^3.6.0",
@@ -12,7 +12,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "swr": "^2.2.5"
   },
   "engines": {
     "node": ">=18"

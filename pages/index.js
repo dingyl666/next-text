@@ -8,10 +8,8 @@ import Date from '../components/date';
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      {/* Keep the existing code here */}
-
-      {/* Add this <section> tag below the existing <section> tag */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h1>  <Link href={`/test/main`}>练习页面</Link></h1>
         <h2 className={utilStyles.headingLg}>Blog(自动部署测试)</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
