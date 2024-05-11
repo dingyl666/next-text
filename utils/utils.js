@@ -1,7 +1,6 @@
 
 
-export const prodUrl = process.env.NEXT_PUBLIC_URL+process.env.NEXT_PUBLIC_PORT ;
 
-export const prodTestUrl = prodUrl + '/api/test' ;
+export const prodTestUrl = 'http://test.poster.gsteps.cn/api/app/test' ;
 
 
