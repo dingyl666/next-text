@@ -16,7 +16,6 @@ export default function CSR() {
 
   return <>
     <h1>这是客户端渲染的页面</h1>
-
     {data.text}
   </>
 }
