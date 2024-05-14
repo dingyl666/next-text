@@ -1,13 +1,14 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData }: {allPostsData:{id: string,date:string,title:string}[]}) {
   return (
     <Layout home>
+      <Head>title</Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1>  <Link href={`/test/main`}>练习页面</Link></h1>
         <h2 className={utilStyles.headingLg}>Blog(自动部署测试)</h2>
