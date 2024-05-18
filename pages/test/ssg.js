@@ -1,6 +1,5 @@
 import {prodTestUrl} from "../../utils/utils";
 export default function SSG({data}) {
-  console.log("🚀 ~ file:csr ~ line:9 -----", process.env.PORT)
 
   return <>
     <h1>这是静态生成的页面</h1>
