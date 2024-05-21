@@ -1,18 +1,11 @@
+import Link from "next/link";
 
-
-"use client"
-import {useState} from "react";
-import {usePathname} from "next/navigation";
-
-export default function () {
-  const [count,setCount] = useState(1) ;
-  const pathname = usePathname()
-  return (
-    <>
-      <button onClick={async () => {
-        setCount(count => count + 1) ;
-
-      }}>{count}</button>
-    </>
-  )
+export default async function () {
+  return <>
+    <Link href={'/app-router/sequential-data'}>顺序获取数据</Link>
+    <p></p>
+    <Link href={'/app-router/parallel-data'}>并行获取数据</Link>
+    <p></p>
+    <Link href={'/app-router/preloading-data'}>预加载获取数据</Link>
+  </>
 }
