@@ -47,7 +47,7 @@ devDependencies:
     specifier: ^5.14.0
     version: 5.14.0
   typescript:
-    specifier: ^5
+    specifier: latest
     version: 5.4.5
 
 packages:
