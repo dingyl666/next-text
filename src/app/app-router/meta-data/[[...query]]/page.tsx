@@ -2,11 +2,12 @@ import {Metadata} from "next";
 
 
 interface Props {
-  params:{query: string[],},
+  params:Promise<{query: string[]}>
   searchParams:{},
 }
 
-export function generateMetadata({params:{query}}: Props): Metadata {
+export async function generateMetadata(props:Props): Promise<Metadata> {
+  const {query} = await props.params
   return {
     title: query ?query.join(',') : 'not query'
   }
