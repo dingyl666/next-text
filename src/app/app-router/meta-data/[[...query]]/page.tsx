@@ -3,7 +3,7 @@ import {Metadata} from "next";
 
 interface Props {
   params:Promise<{query: string[]}>
-  searchParams:{},
+  searchParams:Promise<{ [key: string]: string | undefined }>;
 }
 
 export async function generateMetadata(props:Props): Promise<Metadata> {
