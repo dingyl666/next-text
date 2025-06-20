@@ -38,10 +38,11 @@ async function Albums({list}:any) {
 }
 
 export default async function Page({
-                                     params: { username },
+                                     params,
                                    }: {
-  params: { username: string }
+  params: Promise<{ username: string }>
 }) {
+  const {username} = await params
   // Initiate both requests in parallel
   const artistData = getArtist(username)
   const albumsData = getArtistAlbums(username)
