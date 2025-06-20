@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/next"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/next/$1"
+      }
+    ]
+  }
