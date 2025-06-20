@@ -29,9 +29,10 @@ async function Playlists({ artistID }: { artistID: string }) {
   )
 }
 
-export default async function Page({params: { username },}: {
-  params: { username: string }
+export default async function Page({params}: {
+  params: Promise<{ username: string }>
 }) {
+  const {username} = await params
   // Wait for the artist
   const artist:any = await new Promise(resolve => {
     setTimeout(() => {
