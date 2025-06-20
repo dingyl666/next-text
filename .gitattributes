@@ -1,0 +1,12 @@
+
+# 统一使用 LF 换行符
+* text=auto eol=lf
+
+# 针对 JSON、YAML 文件强制 LF
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml  text eol=lf
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.js   text eol=lf
+*.jsx  text eol=lf
