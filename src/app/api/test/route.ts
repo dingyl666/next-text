@@ -1,9 +1,10 @@
 
 import {NextRequest} from "next/server";
-import {Params} from "next/dist/shared/lib/router/utils/route-matcher";
 
 
-export async function GET(request: NextRequest, context: { params: Params }) {
+export async function GET(request: NextRequest, context: { params: Promise<{query: string[]}> }) {
+  const {query} = await context.params
+  console.log("🚀 ~ file:route ~ line:6 -----", query)
   const res = await fetch('http://47.94.178.99/test0', {
     headers: {
       'Content-Type': 'application/json',
