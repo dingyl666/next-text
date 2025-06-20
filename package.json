@@ -1,11 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "PORT=8000 next dev",
-    "start": "PORT=18000 next start"
+    "build": "npx next build",
+    "dev": "cross-env PORT=8000 next dev",
+    "start": "cross-env PORT=18000 next start"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
     "next": "latest",
