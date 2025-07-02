@@ -6,16 +6,19 @@
     "start": "cross-env PORT=18000 next start"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
     "cross-env": "^7.0.3",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
     "next": "latest",
+    "postcss": "^8.5.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "server-only": "^0.0.1",
-    "swr": "^2.2.5"
+    "swr": "^2.2.5",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "@types/node": "^20",
