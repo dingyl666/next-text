@@ -6,11 +6,15 @@
     "start": "cross-env PORT=18000 next start"
   },
   "dependencies": {
+    "@ant-design/nextjs-registry": "^1.1.0",
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
     "@tailwindcss/postcss": "^4.1.11",
+    "antd": "^5.27.3",
     "cross-env": "^7.0.3",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
     "next": "latest",
+    "openai": "^5.19.1",
     "postcss": "^8.5.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -18,7 +22,8 @@
     "remark-html": "^16.0.1",
     "server-only": "^0.0.1",
     "swr": "^2.2.5",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "vditor": "^3.11.2"
   },
   "devDependencies": {
     "@types/node": "^20",
