@@ -1,0 +1,11 @@
+
+
+
+.no-preview .ant-upload-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.no-preview .ant-upload-list-item-name {
+    pointer-events: none;
+    color: #000;
+  }
