@@ -14,7 +14,8 @@ const useCodeContent = create<Props & Action>()((set, get) => ({
   userCode: "",
   setAiCode: (value) => set((state) => ({
     aiCode: value,
-    userCode: state.userCode + '\n' + value , 
+    // userCode: state.userCode + '\n' + value , 
+    userCode: value , 
   })),
   setUserCode: (value) => set({ userCode: value }),
 }));

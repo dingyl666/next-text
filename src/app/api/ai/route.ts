@@ -39,7 +39,7 @@ class LimitedQueue {
   enqueue(message: QueueItem) {
     if (this.items.length >= this.limit * 2) {
       // 移除最老的一轮对话（user + assistant）
-      this.items.shift(); // 移除 user
+      this.items.shift();
       if (this.items.length > 0 && this.items[0].role === "assistant") {
         this.items.shift(); // 移除对应的 assistant
       }
